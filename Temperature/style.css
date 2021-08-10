@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0px;
+}
+h1 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+body {
+    background-image: url("tmp.jpg");
+    background-size: cover;
+}
+.nav {
+    border: 2px solid orange;
+    width: 400px;
+    height: 200px;
+    background-color: wheat;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+label, input {
+    position: relative;
+    left: 10px;
+    margin-top: 10px;
+}
+
+ /* Sredjivanje convert btn-a */
+#f, #c, #k {
+    padding: 2.5px 10px;
+    position: relative;
+    background-color: sienna;
+    color: white;
+    border: none;
+    left: 20px;
+}
+
+#f {
+    position: relative;
+    left: -2px;
+}
+#k {
+    position: relative;
+    left: 23px;
+}
+/* Sredjivanje reset btn-a */
+#reset {
+    position: relative;
+    top: 20px;
+    left: 94px;
+    background-color: sienna;
+    color: white;
+    padding: 10px 20px;
+    z-index: 10;
+    border: none;
+    width: 40.5%;
+}
+
+input {
+    margin-left: 30px;
+}
+#inputF {
+    position: relative;
+    left: -11px;
+}
+
+#inputK {
+    position: relative;
+    left: 13px;
+}
