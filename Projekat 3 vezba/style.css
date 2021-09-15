@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pre-header {
+    background-color: #111618;
+    height: 60px;
+    color: #fff;
+    position: relative;
+    
+}
+.pre-header .row p {
+    padding: 20px;
+    position: relative;
+    left: 120px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+span {
+    color: silver;
+    
+}
+ul li {
+    list-style-type: none;
+    text-align: right;
+    float: right;
+    position: relative;
+    padding: 20px;
+    left: -200px;
+    font-size: 15px; 
+}
+
+a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    color: silver;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo-menu {
+    padding-top: 28px;
+    position: relative;
+    left: 142px;
+}
+.nav li {
+    padding: 10px;
+    padding-top: 44px;
+    position: relative;
+    left: -90px;
+}
+.nav li .li-btn {
+    background-color: #5727f0;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+        
+}
+
+
+  
+.nav li .li-btn:hover {
+    background-color: transparent;
+    color: #5727f0;
+    border: 1px solid #5727f0;
+    transition: 0.3s;
+    box-shadow: 0px 2px 2px 0px silver;
+}
+
+.hero-section {
+    height: 600px;
+    background-image: url(hero-section.jpg);
+    background-position: left;
+    padding-top: 165px;
+}
+
+.hero-section h1, .hero-section p {
+    color: white; 
+    padding-bottom: 40px;
+}
+.hero-section p {
+    font-size: 20px;
+}
+.btn-discover {
+    padding: 20px 30px;
+    background-color: #3d4df5;
+    color: white;
+    font-weight: bold;
+}
+.btn-discover:hover {
+    background-color: transparent;
+    border: 2px solid #3d4df5;
+    color: #3d4df5;
+    position: relative;
+    transition: 0.5s;
+    padding: 25px 35px;
+}
