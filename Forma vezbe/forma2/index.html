@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="https://www.google.rs" class="forma1">
+
+        <fieldset>
+            <legend>Login details</legend>
+
+            <p>
+                <label>Name:</label>
+                <input type="text">
+            </p>
+
+            <p>
+                <label>Email:</label>
+                <input type="text">
+            </p>
+
+            <p>
+                <label>Password:</label>
+                <input type="password">
+            </p>
+
+         </fieldset>
+    </form>
+
+    <form action="https://www.google.rs" class="forma2">
+
+        <fieldset>
+            <legend>Your feedback</legend>
+            <br>
+
+                    <label>How satisfied are you with our service</label>
+                    <br><br>
+                 <p class="satisfaction">                    Very satisfied <input type="radio" name="satisfaction" value="vs">
+                    <br><br>
+                    Satisfied<input type="radio" name="satisfaction" value="s">
+                    <br><br>
+                    Didn't care<input type="radio" name="satisfaction" value="dc">
+                    <br><br>
+                    Dissatisfied<input type="radio" name="satisfaction" value="d">
+                    <br><br>
+                    Very dissatisfied<input type="radio" name="satisfaction" value="vd">
+                    <br><br>
+                    <br><br>
+                </p>
+
+                <label>Please check all emotions that apply to you</label>
+
+                <p class="emotions">
+                    Angry<input type="checkbox" name="emotions" value="angry">
+                    <br><br>
+                    Sad<input type="checkbox" name="emotions" value="sad">
+                    <br><br>
+                    happy<input type="checkbox" name="emotions" value="happy">
+                    <br><br>
+                    Ambivalent<input type="checkbox" name="emotions" value="ambivalent">
+                </p>
+
+                <p>
+                    <label>Further comments:</label>
+                    <textarea  cols="30" rows="5"></textarea>
+                </p>
+
+                
+            
+
+         </fieldset>
+    
+
+        <p>
+            <label>Bio photo:</label>
+            <input type="file">
+        </p>
+
+        <p>
+            <label class="lokacija">Location visited</label>
+            <select class="location">
+                <optgroup label="City">
+                    <option value="belgrade">Belgrade</option>
+                    <option value="novisad">Novi Sad</option>
+                    <option value="nis">Nis</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <input type="submit" value="Submit" class="submit">
+        <br><br>
+        <input type="reset" value="Reset" class="reset">
+    </form>
+        
+</body>
+</html>

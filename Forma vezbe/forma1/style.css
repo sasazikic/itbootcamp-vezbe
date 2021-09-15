@@ -1,0 +1,19 @@
+input {
+    margin: 10px 0px;
+}
+
+.gender {
+    margin: 15px 0px;
+}
+
+.pol {
+    margin: 0px;
+}
+
+fieldset {
+    width: 40%;
+}
+
+.checkbox {
+    margin: 0px;
+}

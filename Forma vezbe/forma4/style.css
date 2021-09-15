@@ -1,0 +1,28 @@
+
+label{
+    color: rgb(95, 89, 89);
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+fieldset{
+    border: 1px solid brown;
+    width: 350px;
+}
+
+button{
+    background-color: rgb(31, 209, 31);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(72, 72, 189);
+}
+
+

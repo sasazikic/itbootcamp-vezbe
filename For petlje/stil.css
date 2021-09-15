@@ -1,0 +1,32 @@
+table {
+    border: 1px solid red;
+}
+td {
+    border: 1px solid red;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.obojen {
+    background-color: purple;
+}
+
+.ljubicasti {
+    color: purple;
+}
+
+span {
+    border: 1px solid red;
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    padding: 20px 0px;
+    margin-bottom: 10px;
+}
+
+span:nth-child(odd) {
+    background-color: black;
+    color: white;
+}

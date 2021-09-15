@@ -1,0 +1,25 @@
+h1{
+    color: purple;
+}
+p{
+    color: rgb(187, 184, 184);
+}
+
+button{
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(185, 113, 185);
+    transition: 1s;
+}
+
+fieldset{
+    width: 300px;
+    padding-left: 20px;
+}
