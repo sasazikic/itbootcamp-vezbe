@@ -1,0 +1,55 @@
+header{
+    background-color: #55534d;
+    color: white;
+    padding: 15px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-inline-start: 10px;
+}
+
+nav ul li {
+    background-color: #55534d;
+    margin-top: 10px;
+    padding: 12px;
+    color: white;
+    
+   /* position: relative;
+    left: 10px;*/
+}
+
+nav ul li:hover  {
+    background-color: #ccb375;
+    box-shadow: 5px 5px 5px gray;
+}
+
+/* Section - centralni deo */
+
+section {
+    padding: 12px 12px 12px 20px;
+
+}
+
+section h1{
+    padding: 5px 0px;
+}
+
+/* Aside - desni deo stranice */
+
+aside {
+    text-align: center;
+    padding: 12px;
+}
+
+/* Footer - donji deo stranice */
+
+footer {
+    background-color: #55534d;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
