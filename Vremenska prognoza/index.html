@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vremenska prognoza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Overpass:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <header>
+        <div class="top-side-header">
+
+            <div class="logo-img">
+                <img src="images/new.webp" alt="">
+            </div>
+
+            <div class="top-side-ui">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li>Naslovna</li>
+                <li>Najnovije</li>
+                <li>BAR Rijaliti</li>
+                <li>Korona</li>
+                <li>Sport</li>
+                <li>Info</li>
+                <li>Smartlife</li>
+                <li>Zabava</li>
+                <li>Magazin</li>
+                <li>Kolumne</li>
+                <li>Lepa i srecna</li>
+                <li>Wanted</li>
+                <li>Sensa</li>
+                <li>Stvar ukusa</li>
+                <li>Yumama</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="weather-section">
+            <div class="weather-section-headline">
+                <div class="headline-left">
+                    <h3>+</h3>
+                    <h1>VREME</h1>
+                </div>
+                
+                <button>Izaberi lokaciju <span class="location-box"> </span></button>
+            </div>
+
+            <div class="weather-forecast">
+                <p>Trenutno</p>
+                <h1>Beograd</h1>
+                <div class="weather-today">
+                    <div>
+                        <p class="day-today">19. Januar, 15:36</p>
+                        <span class="temperature">4°</span>
+                    </div>
+                    <div>
+                        <div class="weather-icon"><img src="images/weather/sunny.png" alt=""></div>
+                        <p class="weather-description">Vedro</p>
+                    </div>
+                </div>
+                <div class="weather-today-more">
+                    <div class="max-temperature">
+                        <i class="fas fa-arrow-up"></i>
+                        <span id="max-temperature">7</span>
+                    </div>
+                    <div class="min-temperature">
+                        <i class="fas fa-arrow-down"></i>
+                        <span id="min-temperature">4</span>
+                    </div>
+                    <div class="wind">
+                        <i class="fas fa-wind"></i>
+                        <span id="wind">0</span> m/s
+                    </div>
+                    <div class="humidity">
+                        <i class="fas fa-tint"></i>
+                        <span id="humidity">51</span>%
+                    </div>
+                </div>
+            </div>
+    </div>
+
+<div class="weather-future-section">
+    <div class="weather-future">
+
+        <div class="weather-tomorrow">
+            <p>SUTRA</p>
+
+            <div class="tomorrow-icon">
+                <img src="images/weather/rsc.png" alt="">
+            </div>
+
+            <div class="weather-future-more">
+                <div class="max-temperature">
+                    <i class="fas fa-arrow-up"></i>
+                    <span id="max-temperature">7</span>
+                </div>
+
+                <div class="min-temperature">
+                    <i class="fas fa-arrow-down"></i>
+                    <span id="min-temperature">4</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="weather-overmorrow">
+            <p>PREKOSUTRA</p>
+            <div class="overmorrow-icon">
+                <img src="images/weather/sc.png" alt="">
+            </div>
+            <div class="weather-future-more">
+                <div class="max-temperature">
+                    <i class="fas fa-arrow-up"></i>
+                    <span id="max-temperature">7</span>
+                </div>
+                <div class="min-temperature">
+                    <i class="fas fa-arrow-down"></i>
+                    <span id="min-temperature">4</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="map-wrapper">
+        <img src="images/newmap.png" alt="">
+
+    </div>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

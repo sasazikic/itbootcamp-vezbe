@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: rgb(225, 225, 225);
+}
+
+$mondo-color-purple: rgb(30, 0, 65);
+
+header {
+    background-color: $mondo-color-purple;
+    width: 100%;
+
+    .top-side-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 21px;
+
+        .logo-img {
+            img {
+                width: 115px;
+                height: 24px;
+            }
+        }
+
+        .top-side-ui {
+        display: flex;
+        margin-right: 15px;
+
+            .search-icon {
+                padding: 0px 10px;
+
+                .fa-search {
+                    color: white;
+                    font-size: 2.5rem;
+                    font-weight: 300;
+                }
+            }
+            .hamburger {
+                padding: 0px 10px;;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                text-align: right;
+                span:nth-child(1), span:nth-child(2), span:nth-child(3) {
+                    width: 30px;
+                    height: 2px;
+                    background-color: white;
+                    display: block;
+                }
+                span:nth-child(2) {
+                    width: 25px;
+                }
+                span:nth-child(3) {
+                    width: 20px;
+                }
+            }
+        }
+    }
+    nav {
+        overflow: scroll;
+
+        ul {
+            display: flex;
+            justify-content: flex-start;
+            list-style-type: none;
+    
+            li {
+                color: rgb(163, 156, 161);
+                font-size: 1.4rem;
+                padding: 23px 15px 12px 15px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.weather-section {
+    margin-top: 60px;
+    padding: 0px 10px 0px 10px;
+
+    .weather-section-headline {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .headline-left {
+            display: flex;
+            align-items: center;
+                
+                h3 {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 3rem;
+                    background-color: rgb(255, 64, 87);
+                    padding: 0px 0.5px;
+                    margin-right: 10px;
+                }
+        }
+        
+        button {
+            font-size: 1.6rem;
+            border: none;
+            background-color: transparent;
+            padding-right: 44px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba($color: grey, $alpha: 0.5);
+            text-align: left;
+            position: relative;
+
+            span {
+                border: 3px solid rgb(255, 64, 87);
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                transform: rotate(45deg);
+                border-top: none;
+                border-left: none;
+                position: absolute;
+                right: 0px;
+            }
+        }
+    }
+    .weather-forecast {
+        background-color: $mondo-color-purple;
+        padding: 30px 20px;
+
+        p {
+            font-size: 1.2rem;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+        h1 {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        .weather-today {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba($color: grey, $alpha: 0.5);
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            div:nth-child(1) {
+                gap: 30px;
+            }
+            .temperature {
+                font-size: 6rem;
+                color: white;
+                font-weight: bold;
+            }
+            .day-today {
+                color: rgb(243, 53, 104);
+                font-size: 1.3rem;
+            }
+            .weather-icon {
+                width: 150px;
+                height: 150px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .weather-today-more {
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.8rem;
+
+            .fas {
+                color: rgb(243, 53, 104);
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.weather-future-section {
+    padding: 0px 10px;
+
+    .weather-future {
+        text-align: center;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(29, 5, 53);
+
+        .weather-tomorrow, .weather-overmorrow {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            font-size: 1rem;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tomorrow-icon, .overmorrow-icon {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 10px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .weather-future-more {
+            color: white;
+            font-size: 1.8rem;
+            display: flex;
+
+            div:nth-child(1) {
+                margin-right: 10px;
+            }
+    
+            .fas {
+                color: rgb(243, 53, 104);
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.map-section {
+    padding: 0px 10px;
+    margin-top: 120px;
+    border: 3px solid yellow;
+    border: 1px solid red;
+
+    .map-wrapper {
+        width: 100%;
+        border: 1px solid green;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
