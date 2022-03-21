@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.uc-nav-bar {
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+        font-size: 16px;
+        margin: 15px 0px 30px 0px;
+        // white-space: nowrap;     AKO ZATREBA NA VELICINE MALO IZNAD 760PX
+    }
+
+    &-icons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin-bottom: 20px;
+        max-width: 280px;
+
+
+        .icon-wrap {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            
+            a {
+                width: 35px;
+                height: 35px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }   
+            }
+        }
+        .icon-wrap:nth-child(1),
+        .icon-wrap:nth-child(2),
+        .icon-wrap:nth-child(3),
+        .icon-wrap:nth-child(4) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .uc-nav-bar *{
+        margin: 0px;
+    }
+
+    .uc-nav-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 722px;
+        margin: 0px 0px 0px 10px;
+        
+        .uc-nav-bar-icons {
+            max-width: unset;
+            width: unset;
+          
+            
+            .icon-wrap {
+                margin: 0px;
+                width: unset;
+                margin: 0px 10px;
+            }
+        } 
+    }
+}

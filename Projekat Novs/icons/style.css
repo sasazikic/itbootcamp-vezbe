@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.uc-nav-bar {
+  margin: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.uc-nav-bar-title {
+  font-size: 16px;
+  margin: 15px 0px 30px 0px;
+}
+
+.uc-nav-bar-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  margin-bottom: 20px;
+  max-width: 280px;
+}
+
+.uc-nav-bar-icons .icon-wrap {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.uc-nav-bar-icons .icon-wrap a {
+  width: 35px;
+  height: 35px;
+}
+
+.uc-nav-bar-icons .icon-wrap a img {
+  height: 100%;
+  width: 100%;
+}
+
+.uc-nav-bar-icons .icon-wrap:nth-child(1),
+.uc-nav-bar-icons .icon-wrap:nth-child(2),
+.uc-nav-bar-icons .icon-wrap:nth-child(3),
+.uc-nav-bar-icons .icon-wrap:nth-child(4) {
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 760px) {
+  .uc-nav-bar * {
+    margin: 0px;
+  }
+  .uc-nav-bar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 722px;
+    margin: 0px 0px 0px 10px;
+  }
+  .uc-nav-bar .uc-nav-bar-icons {
+    max-width: unset;
+    width: unset;
+  }
+  .uc-nav-bar .uc-nav-bar-icons .icon-wrap {
+    margin: 0px;
+    width: unset;
+    margin: 0px 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

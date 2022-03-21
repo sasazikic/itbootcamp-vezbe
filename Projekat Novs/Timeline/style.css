@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.timeline-wrapper {
+  padding: 10px;
+  padding-left: 25px;
+  max-width: 1024px;
+}
+
+.timeline-wrapper .timeline-content-wrapper {
+  border-left: 2px solid rgba(128, 128, 128, 0.8);
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.timeline-wrapper .timeline-content-wrapper .timeline-news:nth-of-type(even) {
+  margin: 10px 0px;
+}
+
+.timeline-wrapper .timeline-content-wrapper .timeline-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.timeline-wrapper .timeline-content-wrapper .timeline-news a {
+  text-decoration: none;
+  color: black;
+}
+
+.timeline-wrapper .timeline-content-wrapper .timeline-news:before {
+  content: '20';
+  display: block;
+  padding: 5px 0px;
+  color: grey;
+  background-color: white;
+  position: absolute;
+  left: -33px;
+  top: 50px;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.timeline-wrapper .timeline-content-wrapper .timeline-news::after {
+  content: 'min';
+  display: block;
+  padding-bottom: 10px;
+  color: grey;
+  background-color: white;
+  position: absolute;
+  left: -33px;
+  top: 65px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.timeline-wrapper .timeline-content-wrapper .timeline-news img {
+  width: 130px;
+  height: 100px;
+  position: relative;
+}
+
+.timeline-wrapper .timeline-content-wrapper .timeline-news .timeline-text {
+  margin-left: 10px;
+}
+
+.timeline-wrapper .timeline-content-wrapper .timeline-news .timeline-text a {
+  margin-bottom: 10px;
+  padding-top: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+.timeline-wrapper .timeline-content-wrapper .timeline-news .timeline-text span {
+  border-left: 3px solid yellow;
+  padding: 3px 0px;
+  padding-left: 5px;
+  color: gray;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.timeline-wrapper .timeline-content-wrapper .timeline-news:first-child::before {
+  z-index: 10;
+  padding-top: 45px;
+  top: 29px;
+}
+
+.timeline-wrapper .timeline-content-wrapper .timeline-news:last-child::after {
+  padding-bottom: 50px;
+}
+/*# sourceMappingURL=style.css.map */
